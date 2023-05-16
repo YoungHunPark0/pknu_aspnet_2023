@@ -1,0 +1,68 @@
+<!DOCTYPE html>  <!-- html 선언. 웹브라우저에 HTML5문서 라는 것을 알리기 위해서 적어야함 --> 
+<html lang="ko"> <!-- 모든 html은 head와 body로 이루져있음. lang=언어, ko=한국어 -->
+<head> <!-- head = 머릿글, 화면에 나오지 않고 숨겨져 있음-->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>첫번째 웹페이지</title> <!-- head에서 유일하게 웹브라우저에서 표시됨 -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- 화면사이즈가 어떻게 바뀌든 사용하기위한?-->
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> 디자인영역, main은 파일이 필요한데 예시안으로 미리적혀져 있는 템플릿 -->
+    <!-- <script src='main.js'></script> -->
+    <style>
+        /* h1 태그 전부 스타일 지정*/
+        h1 {
+            color: red;
+            background-color: blue;
+        }
+    </style>
+    <!-- script는 javascript -->
+    <script>
+        alert=('Hello, HTML5!');
+    </script>
+</head>
+<body> <!-- 화면상에 랜더링 돼서 나오는건 전부 body, 실행시 소스볼려면 실행후 페이지에서 우클릭 페이지소스보기  -->
+    <h1>Hello, HTML5</h1> <!-- h1~h6 제목글자생성. h6 갈수록 글자크기가 작아짐 -->
+    <h2>Hello, Html5</h2>
+    <h3>Hello, H3</h3>
+    <h4>Hello, H4</h4>
+    <h5>Hello, H5</h5>
+    <h6>Hello, H6</h6> 
+    <!-- p,br,hr = 본문영역 생성, Lorem10 -> 본문10개가 들어감 --> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque corrupti facere assumenda rerum officiis. 
+        Quos illo possimus molestias quaerat minus animi vitae libero ea neque provident, 
+        repudiandae eos error cupiditate iure sapiente et accusamus in nostrum dolor sed accusantium!</p> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque corrupti facere assumenda rerum officiis. 
+        Quos illo possimus molestias quaerat minus animi vitae libero ea neque provident, 
+        repudiandae eos error cupiditate iure sapiente et accusamus in nostrum dolor sed accusantium!</p> 
+        <!-- hr == horizontal 가로줄 생성. 닫는태그 없음-->
+        <hr>
+
+        <div>
+            <h2>TEST</h2>
+            <!-- br = 브레이크. 사이가 떨어짐 -->
+            <br><br><br><br>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div></div>
+
+        <h1 title="header">My Title</h1> <!-- 속성 (윈폼에서 프로퍼티) -->
+        <!-- img=이미지, src= 소스 // 웹이미지 불러오기 -->
+        <img src="https://img.freepik.com/free-photo/adorable-kitty-looking-like-it-want-to-hunt_23-2149167099.jpg?w=2000" 
+        width="500"> 
+
+        <!-- 여기는 주석 xml, wpf xaml 동일 -->
+        <!-- 하이퍼텍스트 : 사용자의 선택에 따라 특정 정보로 이동하는 조직된 문서
+            a 태그(Anchor) : 다른 웹 페이지나 웹 페이지 내부의 특정 위치로 이동
+            Href : Hyper Reference를 의미 -->
+        <h3>앵커태그</h3>
+        <a href="https://naver.com" target="_blank">네이버</a> <!-- blank = 새창뜸 -->
+        <a href="https://google.com" target="_self">구글</a> <!-- self = 한페이에서 덮어씀 -->
+        <a href="https://www.youtube.com">유튜브</a>
+        
+        <!-- 절대경로 -->
+        <a href="C:\Source\pknu_aspnet_2023\Day01/image01.jpeg">가오갤3</a>
+        <!-- 상대경로 -->
+        <a href="./image01.jpeg">가오갤3</a> 
+</body>
+</html> 
