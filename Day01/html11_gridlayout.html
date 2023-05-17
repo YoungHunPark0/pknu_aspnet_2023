@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>그리드 레이아웃</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <style>
+        #wrap {
+            display: grid; /* 그리드 레이아웃을 사용 지정 */
+            grid-template-columns: repeat(3, 1fr); /* repeat 반복하다 (3열, 1배율) // fr=배율 == 1*(wpf) */
+            grid-template-rows: 1fr 2fr; /* == 1* / 2* */
+            row-gap: 0;
+            column-gap: 0;
+        }
+
+        .item {
+            padding: 10px;
+            background-color: gainsboro;
+        }
+        /* item에서 홀수값인 부분만 */
+        .item:nth-child(2n+1) {
+            background-color: gray;
+        }
+
+</style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, fuga.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, enim.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, et.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, iste.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, doloremque?</div>    
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quasi!</div>
+    </div>
+</body>
+</html>

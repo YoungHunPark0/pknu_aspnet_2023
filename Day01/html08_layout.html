@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>수평정렬</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <style>
+        div.container {
+            overflow: hidden; /* overflow:hidden == 내 영역을 벗어나는 부분은 안씀 (없으면 다 붙어버림. 한영역을 다 잡아줌)*/
+        }
+
+        div.item {
+            float: left;
+                /* 0 15 => 0-위아래, 15-좌우*/
+            margin: 0 5px; /* CSS margin은 top right bottom left 순 */
+            padding: 10px; /* padding은 안쪽여백 */
+            border: solid 1px blue; 
+        }
+
+        p {
+            width: 500px;
+            margin: 0 auto; /* 중앙정렬. 크기를 늘리든 줄이든 중앙 */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis voluptatibus nesciunt laborum?
+        Consectetur facilis mollitia omnis blanditiis repellendus dolorum, iusto quo consequatur minima quam voluptatibus
+        culpa, nam aliquam beatae labore eius officiis voluptate sapiente. Unde odio explicabo perspiciatis dicta nostrum
+        cumque, maxime, omnis corrupti architecto doloribus autem quia neque.</p>
+    <div class="container">
+        <div class="item">메뉴 - 1</div>
+        <div class="item">메뉴 - 2</div>
+        <div class="item">메뉴 - 3</div>
+        <div class="item">메뉴 - 4</div>
+        <div class="item">메뉴 - 5</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, modi eius consectetur, error possimus eum cumque
+        reiciendis in rem aspernatur porro at facere ad. Omnis iste dignissimos quasi quam, provident eligendi voluptates
+        ducimus, repellendus enim explicabo amet quisquam commodi. Neque quisquam ad eos obcaecati dolore adipisci earum
+        porro. Quaerat, a.</p>
+</body>
+</html>

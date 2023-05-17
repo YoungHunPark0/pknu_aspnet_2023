@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>입력태그</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+</head>
+<body>
+    <!-- action="" 아무것도 없으면 자기자신 -->
+    <!-- method 어떻게 전달할 것인가// Get- url주소에 직접데이터입력해서 전달, Post방식-주소변경x 비밀스럽게 안쪽에서 데이터전달 -->
+    <!-- get사용 후 검색에 테스트 누르면 주소창에 ?search= 나옴.= 주소에 ?있으면 get방식//  post는 나오지않음=id,password 보안관련 -->
+    <!-- form태그는 보이지않지만 입력양식의 시작과 끝표시-->
+    <form method="get">
+        <!-- input도 외부에 다른요소를 가지지않음 (/> 안함)-->
+        <!-- 입력태그 -->
+        <input type="text" name="search" value="텍스트"><br>
+        <input type="password" name="pwd" value="12345"><br> <!-- br break point 써야 밑으로 내려감-->
+        <!-- &nbsp; == 스페이스. 그냥 스페이스해도 공백이 생기지 않기때문에 사용함-->
+        <input type="checkbox" name="strawberry">딸기 &nbsp;&nbsp;&nbsp; <input type="checkbox" name="strawberry">바나나<br>
+        <!-- name은 똑같이 쓰고 value를 다르게 쓰면 하나만 체크할 수 있음-->
+        <input type="radio" name="gender" value="male">남성<input type="radio" name="gender" value="female">여성<br>
+        <!-- 파일선택해서 파일올리는 기능-->
+        <input type="file" name="photo"><br>
+        <input type="image" src=""><br>
+        <input type="color" value="#FF0000"><br>
+        <input type="date" value="2000-01-01"><br>
+        <input type="month" value="2023-05"><br>
+        <input type="email" value="fasdf@naver.com"><br>
+        <select name="간식">
+            <option>--선택--</option>
+            <option>김밥</option>
+            <option>떡볶이</option>
+            <option>순대</option>
+            <option>어묵</option>
+        </select><br>
+        <!-- 히든태그 -->
+        <!-- textarea는 마우스 드래그로 크기조절이 가능함-->
+        <textarea name="content" rows="10"></textarea>
+        <!-- 히든태그. 화면에 나오지 않고 빈공간으로 보임-->
+        <input type="hidden" name="userid" value="TED7899"><br>
+        <!-- 그냥 button은 글자없이 버튼칸만 만들어지고, 데이터제출x// submit쓰면 제출이라는 버튼생성과 데이터제출 가능-->
+        <input type="submit" value="승인">
+        <input type="button" value="버튼">
+        <input type="reset" value="초기화">
+    </form>
+</body>
+</html>
