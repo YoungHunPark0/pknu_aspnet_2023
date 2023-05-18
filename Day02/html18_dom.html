@@ -9,15 +9,17 @@
     <script src='main.js'></script> -->
     <script>
         window.onload = function () {
-            var image = document.getElementById('image');
-            image.src = 'https://picsum.photos/640/300'; // 실행할때마다 사진이 랜덤으로 바뀜
-            image.width = 640;
-            image.height = 300;
-            // img 객체 접근, js에서 src값과 속성을 변경
+            var button = document.body.querySelector("input");
+            button.onclick = function(ev) {
+                alert('click!!');
+            }
+
+            alert(event);
         }
     </script>
 </head>
 <body>
-    <img id="image">
+    <input type="button" value="클릭">
+    <!-- <input type="button" value="클릭" onclick="alert('click!!');"></button> 위와 동일 구식방식  -->
 </body>
 </html>
