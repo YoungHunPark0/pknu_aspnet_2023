@@ -20,6 +20,8 @@ ASP.NET 학습 리포지토리
 ## 3일차
 - 웹 기본
 	- Bootstrap 예제클로닝
+	<!-- https://getbootstrap.com/docs/5.3/examples/album/
+	-->
 	- 핀터레스트스타일페이지 클로닝
 	
 Bootstrap 앨범사이트 클로닝
