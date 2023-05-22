@@ -1,0 +1,22 @@
+/* fonts.google.com/specimen/Nanum+Gothic?subset=korean&noto.script=Kore 여기서 remove regular +클릭후 오른쪽 import클릭 */
+/* 구글폰트 사용법 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}

@@ -33,3 +33,15 @@ src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/image
 
 <img
 src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/aspnet02.gif" width="700">
+
+## 4일차
+- ASP.NET MVC
+	- ASP.NET 기본
+	- ASP.NET 프로젝트
+<!-- 제어판-프로그램 및 기능 - windows 기능 켜기/끄기-인터넷정보서비스 체크-확인
+제어판-관리도구-IIS관리자에서 버전확인가능
+visual studio - c# 데스크톱- asp.net core 웹앱(mvc) - .net 6.0으로사용 (7.0이랑 별 차이없음) 도커사용안함, 최상위문서사용안함 체크(c#코드 꼬일수 있음) 사용할 때 마다 체크.
+종속성 = 누겟패키지. mysql사용 할려면 설치
+빌드 - 실행 - 메세지 다시 안뜨게 체크 전부 예누르기 - 화면 오류나오면 화면상에서
+아무곳이나 누르고 thisisunsafe 엔터 누르면됨
+visual studio 최상단 불꽃모양 - 파일다시로드시 핫다시로드 체크 -> 저장하면 바로바로 수정됨-->
