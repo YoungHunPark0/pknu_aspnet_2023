@@ -45,3 +45,12 @@ visual studio - c# 데스크톱- asp.net core 웹앱(mvc) - .net 6.0으로사용
 빌드 - 실행 - 메세지 다시 안뜨게 체크 전부 예누르기 - 화면 오류나오면 화면상에서
 아무곳이나 누르고 thisisunsafe 엔터 누르면됨
 visual studio 최상단 불꽃모양 - 파일다시로드시 핫다시로드 체크 -> 저장하면 바로바로 수정됨-->
+
+ASP.NET Core MVC 게시판
+
+<img
+src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/aspnet03.png" width="700">
+
+## 5일차
+- ASP.NET MVC
+	- 게시판 계속
