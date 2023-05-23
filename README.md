@@ -53,4 +53,7 @@ src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/image
 
 ## 5일차
 - ASP.NET MVC
-	- 게시판 계속
+	- 게시판 페이징까지
+	
+<img
+src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/aspnet04.gif" width="700">
