@@ -1,0 +1,42 @@
+﻿@model aspnet02_boardapp.Models.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 m-auto">
+            <!-- m-auto 정중앙위치 -->
+            <main class="form-signin w-100 ">
+                <form asp-action="Login">
+                    <!-- 아이콘, 로그인 부분 -->
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <img class="mb-4 m-auto" src="~/iot.png" alt="" width="72">
+                    <h1 class="h4 mb-3 fw-normal">로그인</h1>
+
+                    <div class="form-floating">
+                        <!-- RegisterModel.cs에 있는 값인 이메일주소, 패스워드, 패스워드 확인이 출력됨 -->
+                        <input asp-for="Email" type="email" class="form-control" placeholder="Email">
+                        <label asp-for="Email"></label>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                   
+                    <div class="form-floating">
+                        <input asp-for="Password" type="password" class="form-control" placeholder="Password">
+                        <label asp-for="Password"></label>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+
+                    <div class="checkbox mb-3">
+                        <label asp-for="RememberMe">
+                            <input type="checkbox" asp-for="RememberMe" class="form-check-inline" />
+                            @Html.DisplayNameFor(m => m.RememberMe)
+                        </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">로그인</button>
+                </form>
+            </main>
+        </div>
+    </div>
+</div>
+

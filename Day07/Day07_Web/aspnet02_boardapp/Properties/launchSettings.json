@@ -1,0 +1,30 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:62369",
+      "sslPort": 44370
+    }
+  },
+  "profiles": {
+    "aspnet02_boardapp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7237;http://localhost:5138",
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        }, // 핫리로드 설정안할때. 코드로 기본설정 방법
+        "hotReloadEnabled": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+        "hotReloadEnabled": true
+    }
+  }
+}
