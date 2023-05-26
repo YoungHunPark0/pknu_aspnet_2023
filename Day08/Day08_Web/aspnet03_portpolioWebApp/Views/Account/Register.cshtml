@@ -1,0 +1,48 @@
+﻿@model aspnet02_boardapp.Models.RegisterModel
+@{
+	ViewData["Title"] = "회원가입";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<div style="padding: 70px 50px 50px 50px" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 m-auto">
+                <!-- m-auto 정중앙위치 -->
+                <main class="form-signin w-100 ">
+                    <form asp-action="Register">
+                        <!-- 회원가입정보에 타이핑없이 회원가입 클릭시 에러메세지 출력됨 -->
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <img class="mb-4 m-auto" src="~/iot.png" alt="" width="72">
+                        <h1 class="h4 mb-3 fw-normal">회원가입</h1>
+
+                        <div class="form-floating">
+                            <!-- RegisterModel.cs에 있는 값인 이메일주소, 패스워드, 패스워드 확인이 출력됨 -->
+                            <input asp-for="Email" type="email" class="form-control" placeholder="Email">
+                            <label asp-for="Email"></label>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating">
+                            <!-- RegisterModel.cs에 있는 값인 이메일주소, 패스워드, 패스워드 확인이 출력됨 -->
+                            <input asp-for="PhoneNumber" type="text" class="form-control" placeholder="PhoneNumber">
+                            <label asp-for="PhoneNumber"></label>
+                        </div>
+                        <div class="form-floating">
+                            <input asp-for="Password" type="password" class="form-control" placeholder="Password">
+                            <label asp-for="Password"></label>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating">
+                            <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="ConfirmPassword">
+                            <label asp-for="ConfirmPassword"></label>
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">회원가입</button>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
