@@ -101,8 +101,8 @@ src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/image
 
 ## 10일차	
 - ASP.NET RestAPI
-	- OpenAPI같은 서비스를 운영
 	- RestAPI Server 만들기
 	- WPF Client
+	
 - 개인 포트폴리오 웹
 	- 부트스트랩 테마 재적용
