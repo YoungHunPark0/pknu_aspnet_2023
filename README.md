@@ -96,13 +96,23 @@ src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/image
 	- 다른 Bootstrap 테마 적용
 
 SEO Theme 완료
+
 <img
 src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/aspnet07.gif" width="700">
+
+다른테마 적용
+
+<img
+src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/aspnet08.gif" width="700">
 
 ## 10일차	
 - ASP.NET RestAPI
 	- RestAPI Server 만들기
 	- WPF Client
 	
+RestAPI Server
+
+<img
+src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/restapi01" width="700">
 - 개인 포트폴리오 웹
 	- 부트스트랩 테마 재적용
