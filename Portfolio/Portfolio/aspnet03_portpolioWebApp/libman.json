@@ -1,0 +1,13 @@
+// libman = library manager
+// json 문법사용
+{
+    "version": "1.0",
+    "defaultProvider": "cdnjs",
+    "libraries": [
+        { // 누겟패키지랑 똑같음. library에서 받음
+            "library": "Trumbowyg@2.27.3",
+            "destination": "wwwroot/lib/trumbowyg/" // trumbowyg는 탭하지말고 직접적어야함
+        }
+        // 더넣고싶으면 {} 추가해서 하면됨!
+    ]
+}

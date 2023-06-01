@@ -1,0 +1,277 @@
+﻿@model IEnumerable<aspnet03_portpofioWebApp.Models.PortfolioModel>;
+@{
+    ViewData["Title"] = "홈";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+<!-- Shared밑에 있는 _Notification,cshtml을 index.cshtml에 포함시킴 -->
+<partial name="_Notification" />
+<!-- 02.아래부터 다음주석까지 /Views/Home/Index.html에 집어넣습니다 -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 - THE INTRO SECTION
+/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="home" class="intro-section">
+    <div class="container">
+        <div class="row align-items-center text-white">
+            <!-- START THE CONTENT FOR THE INTRO  -->
+            <div class="col-md-6 intros text-start">
+                <h1 class="display-2">
+                    <span class="display-2--intro">IoT/Web YoungHun Portfolio</span>
+                    <span class="display-2--description lh-base">
+                        IoT 시스템 프로그래머 : C#, Python, HTML, MySQL
+                    </span>
+                </h1>
+                <button type="button" class="rounded-pill btn-rounded">
+                    스카웃제의
+                    <span><i class="fas fa-arrow-right"></i></span>
+                </button>
+            </div>
+            <!-- START THE CONTENT FOR THE VIDEO -->
+            <div class="col-md-6 intros text-end">
+                <div class="video-box">
+                    <img src="~/themes/patrix-1.0.0/images/arts/intro-section-illustration.png" alt="video illutration" class="img-fluid">
+                    <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                        <span>
+                            <i class="fas fa-play-circle"></i>
+                        </span>
+                        <span class="border-animation border-animation--border-1"></span>
+                        <span class="border-animation border-animation--border-2"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////
+                             START SECTION 3 - THE CAMPANIES SECTION
+////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="campanies" class="campanies">
+
+     <div class="container" style="padding: 110px 0 0 0;">
+        <div class="row text-center ">
+            <h1 class="display-3 fw-bold text-capitalize">스킬</h1>
+            <div class="heading-line mb-5"></div>
+        </div>
+    </div>
+    <!-- START THE CAMPANIES CONTENT  -->
+    <div class="container">
+        <div class="row cen">
+            <div class="col-md-4 col-lg-2">
+                <div class="campanies__logo-box ">
+                    @*<img src="~/themes/patrix-1.0.0/images/campanies/c-sharp.png" alt="Campany 1 logo" title="Campany 1 Logo" class="img-fluid"> *@
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="campanies__logo-box shadow-sm">
+                    <img src="~/themes/patrix-1.0.0/images/campanies/c-sharp.png" alt="Campany 2 logo" title="Campany 2 Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="campanies__logo-box shadow-sm fw-bold">
+                    <img src="~/themes/patrix-1.0.0/images/campanies/python.png" alt="Campany 3 logo" title="Campany 3 Logo" class="img-fluid"> Python
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="campanies__logo-box shadow-sm">
+                    <img src="~/themes/patrix-1.0.0/images/campanies/mysql.png" alt="Campany 4 logo" title="Campany 4 Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="campanies__logo-box shadow-sm fw-bold">
+                    <img src="~/themes/patrix-1.0.0/images/campanies/browser.png" alt="Campany 3 logo" title="Campany 3 Logo" class="img-fluid"> HTML5
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+                <div class="campanies__logo-box ">
+                   @* <img src="~/themes/patrix-1.0.0/images/campanies/campany-4.png" alt="Campany 4 logo" title="Campany 4 Logo" class="img-fluid">*@
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////
+                              START SECTION 7 - THE PORTFOLIO
+//////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row text-center mt-5">
+            <h1 class="display-3 fw-bold text-capitalize">포트폴리오</h1>
+            <div class="heading-line"></div>
+        </div>
+        <!-- FILTER BUTTONS  -->
+        <div class="row mt-2 mb-4 g-3 text-center">
+            <div class="col-md-12">
+                <button class="btn btn-outline-primary" type="button">All</button>
+                <button class="btn btn-outline-primary" type="button">websites</button>
+                <button class="btn btn-outline-primary" type="button">design</button>
+                <button class="btn btn-outline-primary" type="button">mockup</button>
+            </div>
+        </div>
+
+        <!-- START THE PORTFOLIO ITEMS  -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 1</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-2.jpg" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 2</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-3.jpg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 3</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-4.jpg" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 4</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-5.jpg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 5</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-6.jpg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 6</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-7.jpg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 7</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-8.jpg" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 8</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="~/themes/patrix-1.0.0/images/portfolio/portfolio-9.jpg" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 9</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////
+              START SECTION 8 - GET STARTED
+/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<section id="contact" class="get-started">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="display-3 fw-bold text-capitalize">About me</h1>
+            <div class="heading-line"></div>
+            
+        </div>
+
+        <!-- START THE CTA CONTENT  -->
+        <div class="row text-white">
+            <div class="col-12 col-lg-6 gradient shadow p-3">
+                <div class="cta-info w-100">
+                    <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+                    <p class="lh-lg">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam alias optio minima, tempore architecto sint ipsam dolore tempora facere laboriosam corrupti!
+                    </p>
+                    <h3 class="display-3--brief">What will be the next step?</h3>
+                    <ul class="cta-info__list">
+                        <li>We'll prepare the proposal.</li>
+                        <li>we'll discuss it together.</li>
+                        <li>let's start the discussion.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 bg-white shadow p-3">
+                <div class="form w-100 pb-2">
+                    <h4 class="display-3--title mb-5">start your project</h4>
+                    <form action="#" class="row">
+                        <div class="col-lg-6 col-md mb-3">
+                            <input type="text" placeholder="First Name" id="inputFirstName" class="shadow form-control form-control-lg">
+                        </div>
+                        <div class="col-lg-6 col-md mb-3">
+                            <input type="text" placeholder="Last Name" id="inputLastName" class="shadow form-control form-control-lg">
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <input type="email" placeholder="email address" id="inputEmail" class="shadow form-control form-control-lg">
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <textarea name="message" placeholder="message" id="message" rows="8" class="shadow form-control form-control-lg"></textarea>
+                        </div>
+                        <div class="text-center d-grid mt-1">
+                            <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3">
+                                submit
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- 02. 여기까지 Views/Home/Index에 들어갑니다 -->
+
