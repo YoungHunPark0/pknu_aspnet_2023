@@ -127,3 +127,8 @@ src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/image
 - ASP.NET RestAPI
 	- RestAPI Server 수정
 	- FrontEnd Server 작업계속
+
+RestAPI사용 FrontEnd Web
+
+<img
+src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/restapi02.gif" width="700">
