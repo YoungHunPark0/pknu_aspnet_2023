@@ -29,34 +29,34 @@
     /////////////////////////////////////////////////////////////////////////////////////////////-->
     <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" asp-action="Index" asp-controller="Home">
                 <img src="~/themes/patrix-1.0.0/images/iot.png" alt="logo image"> IoT Portfolio
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link-action" current="page" href="#home">홈</a></li>
-                    <li class="nav-item"><a class="nav-link-action" href="#campanies">스킬</a></li>
-                    <li class="nav-item"><a class="nav-link-action" href="#portfolio">포트폴리오</a></li>
-                    <li class="nav-item">
+                    @if (ViewData["NoScroll"] != "true"){
+                    <li class="nav-item pt-2"><a class="nav-link-action" current="page" href="#home">홈</a></li>
+                    <li class="nav-item pt-2"><a class="nav-link-action" href="#skils">스킬</a></li>
+                    <li class="nav-item pt-2"><a class="nav-link-action" href="#about">About me</a></li>
+                    <li class="nav-item pt-2"><a class="nav-link-action" href="#portfolio">포트폴리오</a></li>
+                    <li class="nav-item pt-2">
                         <a class="nav-link-action" href="#contact">문의하기</a>
                     </li>
-                    <li class="scroll-to-section"><a asp-action="Index" asp-controller="Board" class="nanum-bold">공지사항</a></li>
+                    }
                     @*<li class="scroll-to-section"><div class="main-blue-button"><a href="#contact">Get Your Quote</a></div></li>*@
                     @if (signInManager.IsSignedIn(User))
                     {
                         @if (User.IsInRole("Admin")) // 만약에 여기가 user.inrole에 admin이면
                         {
-                            <li class="scrool-to-section">
+                            <li class="scrool-to-section pt-2">
                                 <a asp-controller="Admin" asp-action="ListRoles">권한관리</a>
                             </li>
-                            <li class="scrool-to-section">
-                                <a asp-controller="Portfolio" asp-action="Index">포폴관리</a>
-                            </li>
+                           
                         }
-                        <li class="scroll-to-section">
+                        <li class="scroll-to-section pt-2">
                             <a asp-controller="Account" asp-action="Profile"
                                asp-route-userName="@userManager.GetUserName(User)">프로필</a>
                         </li>
@@ -68,10 +68,8 @@
                     }
                     else
                     {
-                        <li class="scroll-to-section">
-                            <a asp-controller="Account" asp-action="Register">회원가입</a>
-                        </li>
-                        <li class="scroll-to-section">
+
+                        <li class="scroll-to-section pt-2">
                             <a asp-controller="Account" asp-action="Login">로그인</a>
                         </li>
                     }
