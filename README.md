@@ -122,3 +122,8 @@ src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/image
 - ASP.NET RestAPI
 	- RestAPI Server 체크
 	- FrontEnd Server 작업
+
+## 12일차	
+- ASP.NET RestAPI
+	- RestAPI Server 수정
+	- FrontEnd Server 작업계속
