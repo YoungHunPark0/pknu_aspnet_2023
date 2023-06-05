@@ -132,3 +132,12 @@ RestAPI사용 FrontEnd Web
 
 <img
 src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/restapi02.gif" width="700">
+
+## 13일차	
+- ASP.NET RestAPI
+	- WPF 앱 연동
+	
+RestAPI사용 WPF App 및 Web화면
+
+<img
+src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/restapi03.png" width="700">
