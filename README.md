@@ -145,4 +145,4 @@ src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/image
 개인 포트폴리오
 
 <img
-src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/portfoio.gif" width="700">
+src="https://raw.githubusercontent.com/YoungHunPark0/pknu_aspnet_2023/main/images/portfolio.gif" width="700">
